@@ -27,10 +27,8 @@ targetCompatibility = 1.8
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile 'org.jsoup:jsoup:1.11.3'
-//    compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
-//    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
-//
-//    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.9.5'
 
     testCompile("junit:junit")
+    // https://mvnrepository.com/artifact/org.skyscreamer/jsonassert
+    testCompile group: 'org.skyscreamer', name: 'jsonassert', version: '1.5.0'
 }
