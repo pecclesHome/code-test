@@ -18,8 +18,7 @@ public class MainPagePares {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    public List<String> getURLsFromInitalPage() throws IOException {
-        String url = "https://jsainsburyplc.github.io/serverside-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html";
+    public List<String> getURLsFromInitalPage(String url) throws IOException {
         logger.debug("Url =  {}", url);
         Document doc = Jsoup.connect(url).get();
 //        find all the elements of class productNameAndPromotions this should cut out cross sell
@@ -74,8 +73,9 @@ public class MainPagePares {
                     if (nutritionLevel.contains("kcal")) {
 //                        clean up kcal value
                         String cleanKcal = nutritionLevel.replace("kcal", "");
-                        logger.debug("kcal per 100g = {}", cleanKcal);
-                        berry.setKcal_per_100g(cleanKcal);
+                        int kcal = Integer.parseInt(cleanKcal);
+                        logger.debug("kcal per 100g = {}", kcal);
+                        berry.setKcal_per_100g(kcal);
                     }
                 }
             }
