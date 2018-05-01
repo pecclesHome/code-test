@@ -1,11 +1,11 @@
-# code-test
+#code-test
 
-##Prerequisites 
+#Prerequisites 
 
 please ensure you have gradle installed Gradle 
 
 
-##Commands
+#Commands
 
 * To run test use: gradle test
 
@@ -24,6 +24,7 @@ please ensure you have gradle installed Gradle
 * make MainPagePares functions more reusable:
     * Make parser setting based
     * Brake down functionality in to smaller units 
-    
+
+# Further depending on use case
 Depending on the use case for the code there may be other refinements like add the project to CI platform and build to 
 a docker image.  
