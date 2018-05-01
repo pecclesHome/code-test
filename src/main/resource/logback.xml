@@ -9,7 +9,7 @@
         </layout>
     </appender>
 
-    <logger name="peccles" level="debug"
+    <logger name="peccles" level="info"
             additivity="false">
         <appender-ref ref="STDOUT"/>
     </logger>
