@@ -2,14 +2,14 @@
 
 ### Prerequisites 
 
-please ensure you have gradle installed Gradle 
+To be able to run the commands below, please ensure you have gradle installed.
 
 
 ### Commands
 
 * To run test use: gradle test
 
-* To build appliction: gradle build
+* To build application: gradle build
 
 * To run application: gradle run 
  
